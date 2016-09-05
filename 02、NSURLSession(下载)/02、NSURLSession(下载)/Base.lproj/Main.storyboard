@@ -17,55 +17,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PMu-OR-bGt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwX-1n-alO" customClass="DownLoadPrograssView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="NTN-yT-SjC"/>
+                                    <constraint firstAttribute="height" constant="150" id="ZDt-bq-L0d"/>
+                                    <constraint firstAttribute="width" constant="150" id="dsL-CE-eJ2"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="NTN-yT-SjC"/>
+                                        <exclude reference="ZDt-bq-L0d"/>
+                                        <exclude reference="dsL-CE-eJ2"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="NTN-yT-SjC"/>
+                                        <include reference="ZDt-bq-L0d"/>
+                                        <include reference="dsL-CE-eJ2"/>
                                     </mask>
                                 </variation>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PMu-OR-bGt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4rK-H4-p0n"/>
-                            <constraint firstAttribute="trailing" secondItem="PMu-OR-bGt" secondAttribute="trailing" id="LBM-6r-4C1"/>
-                            <constraint firstItem="PMu-OR-bGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0b-pJ-qv0"/>
-                            <constraint firstItem="PMu-OR-bGt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r9n-JH-611"/>
+                            <constraint firstItem="WwX-1n-alO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QKc-Mj-cWL"/>
+                            <constraint firstItem="WwX-1n-alO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VhX-av-YdQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="PMu-OR-bGt"/>
+                                <exclude reference="WwX-1n-alO"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4rK-H4-p0n"/>
-                                <exclude reference="LBM-6r-4C1"/>
-                                <exclude reference="q0b-pJ-qv0"/>
-                                <exclude reference="r9n-JH-611"/>
+                                <exclude reference="QKc-Mj-cWL"/>
+                                <exclude reference="VhX-av-YdQ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="PMu-OR-bGt"/>
+                                <include reference="WwX-1n-alO"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4rK-H4-p0n"/>
-                                <include reference="LBM-6r-4C1"/>
-                                <include reference="q0b-pJ-qv0"/>
-                                <include reference="r9n-JH-611"/>
+                                <include reference="QKc-Mj-cWL"/>
+                                <include reference="VhX-av-YdQ"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="PMu-OR-bGt" id="0gJ-rG-HGv"/>
+                        <outlet property="prograssView" destination="WwX-1n-alO" id="v3S-qu-EXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
