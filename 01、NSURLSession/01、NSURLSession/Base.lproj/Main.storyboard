@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PMu-OR-bGt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="NTN-yT-SjC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NTN-yT-SjC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NTN-yT-SjC"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PMu-OR-bGt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4rK-H4-p0n"/>
+                            <constraint firstAttribute="trailing" secondItem="PMu-OR-bGt" secondAttribute="trailing" id="LBM-6r-4C1"/>
+                            <constraint firstItem="PMu-OR-bGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0b-pJ-qv0"/>
+                            <constraint firstItem="PMu-OR-bGt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r9n-JH-611"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PMu-OR-bGt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4rK-H4-p0n"/>
+                                <exclude reference="LBM-6r-4C1"/>
+                                <exclude reference="q0b-pJ-qv0"/>
+                                <exclude reference="r9n-JH-611"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PMu-OR-bGt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4rK-H4-p0n"/>
+                                <include reference="LBM-6r-4C1"/>
+                                <include reference="q0b-pJ-qv0"/>
+                                <include reference="r9n-JH-611"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="PMu-OR-bGt" id="0gJ-rG-HGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
