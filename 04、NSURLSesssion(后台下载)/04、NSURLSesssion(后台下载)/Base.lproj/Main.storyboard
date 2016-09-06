@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IU6-qq-LPc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.27073455460000001" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tvV-1w-0vk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="下载">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tvV-1w-0vk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="tvV-1w-0vk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="downloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QxN-si-qFU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgp-VS-uYa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qAM-UN-6hG"/>
+                                    <constraint firstAttribute="width" constant="200" id="w4C-XW-VJX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qAM-UN-6hG"/>
+                                        <exclude reference="w4C-XW-VJX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="qAM-UN-6hG"/>
+                                        <include reference="w4C-XW-VJX"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sgp-VS-uYa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Df-C5-Qme"/>
+                            <constraint firstItem="IU6-qq-LPc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hzr-ib-N6j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IU6-qq-LPc" secondAttribute="bottom" id="Je3-J3-S2m"/>
+                            <constraint firstAttribute="trailing" secondItem="IU6-qq-LPc" secondAttribute="trailing" id="dfH-9z-myB"/>
+                            <constraint firstItem="Sgp-VS-uYa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tbJ-9c-lmd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IU6-qq-LPc"/>
+                                <exclude reference="Sgp-VS-uYa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4Df-C5-Qme"/>
+                                <exclude reference="tbJ-9c-lmd"/>
+                                <exclude reference="Hzr-ib-N6j"/>
+                                <exclude reference="dfH-9z-myB"/>
+                                <exclude reference="Je3-J3-S2m"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="IU6-qq-LPc"/>
+                                <include reference="Sgp-VS-uYa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4Df-C5-Qme"/>
+                                <include reference="tbJ-9c-lmd"/>
+                                <include reference="Hzr-ib-N6j"/>
+                                <include reference="dfH-9z-myB"/>
+                                <include reference="Je3-J3-S2m"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="prograssView" destination="Sgp-VS-uYa" id="4v8-kl-FZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
